@@ -15,6 +15,7 @@
 		2CD0C3E0204C77BA00611B4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD0C3DE204C77BA00611B4F /* LaunchScreen.storyboard */; };
 		2CD0C3EB204C77BA00611B4F /* Pokemon__The_AdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0C3EA204C77BA00611B4F /* Pokemon__The_AdventureTests.swift */; };
 		2CD0C3F6204C77BA00611B4F /* Pokemon__The_AdventureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0C3F5204C77BA00611B4F /* Pokemon__The_AdventureUITests.swift */; };
+		2CD0C404204C7CFC00611B4F /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0C403204C7CFC00611B4F /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2CD0C3F1204C77BA00611B4F /* Pokemon: The AdventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokemon: The AdventureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD0C3F5204C77BA00611B4F /* Pokemon__The_AdventureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon__The_AdventureUITests.swift; sourceTree = "<group>"; };
 		2CD0C3F7204C77BA00611B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD0C403204C7CFC00611B4F /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				2CD0C3D2204C77BA00611B4F /* AppDelegate.swift */,
+				2CD0C403204C7CFC00611B4F /* Pokemon.swift */,
 				2CD0C3D4204C77BA00611B4F /* ViewController.swift */,
 				2CD0C3D6204C77BA00611B4F /* Main.storyboard */,
 				2CD0C3DC204C77BA00611B4F /* Assets.xcassets */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CD0C3DB204C77BA00611B4F /* Pokemon__The_Adventure.xcdatamodeld in Sources */,
+				2CD0C404204C7CFC00611B4F /* Pokemon.swift in Sources */,
 				2CD0C3D5204C77BA00611B4F /* ViewController.swift in Sources */,
 				2CD0C3D3204C77BA00611B4F /* AppDelegate.swift in Sources */,
 			);
