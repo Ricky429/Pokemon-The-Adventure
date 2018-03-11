@@ -46,10 +46,14 @@ class ViewController: UIViewController {
         moveForward.isEnabled = true
         moveBack.isEnabled = true
         moveLeft.isEnabled = true
-        starterLabel.text = "Congratulations, you chose \(bulbasaur)"
+        starterLabel.text = "Congratulations, you chose \(bulbasaur.name)"
         grassChoice.isHidden = true
         fireChoice.isHidden = true
         waterChoice.isHidden = true
+        randPokemon.partyPokemon.append(bulbasaur.name)
+        randPokemon.pokedex.append(bulbasaur.name)
+        
+        
         
     }
     
@@ -59,10 +63,12 @@ class ViewController: UIViewController {
         moveForward.isEnabled = true
         moveBack.isEnabled = true
         moveLeft.isEnabled = true
-        starterLabel.text = "Congratulations, you chose \(charmander)"
+        starterLabel.text = "Congratulations, you chose \(charmander.name)"
         grassChoice.isHidden = true
         fireChoice.isHidden = true
         waterChoice.isHidden = true
+        randPokemon.partyPokemon.append(charmander.name)
+        randPokemon.pokedex.append(charmander.name)
     }
     
     @IBAction func waterStarter(_ sender: Any) {
@@ -71,10 +77,12 @@ class ViewController: UIViewController {
         moveForward.isEnabled = true
         moveBack.isEnabled = true
         moveLeft.isEnabled = true
-        starterLabel.text = "Congratulations, you chose \(squirtle)"
+        starterLabel.text = "Congratulations, you chose \(squirtle.name)"
         grassChoice.isHidden = true
         fireChoice.isHidden = true
         waterChoice.isHidden = true
+        randPokemon.partyPokemon.append(squirtle.name)
+        randPokemon.pokedex.append(squirtle.name)
     }
     
     

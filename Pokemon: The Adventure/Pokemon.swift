@@ -8,6 +8,15 @@
 
 import Foundation
 
+struct randPokemon {
+    
+    static var wildPokemon = Pokemon(name: "", level: 0, hp: 0, atk: 0, def: 0, spAtk: 0, spDef: 0, speed: 0)
+    static var partyPokemon = Array<String>()
+    static var boxPokemon = Array<String>()
+    static var pokedex = Array<String>()
+    
+}
+
 class Pokemon {
     
     var name: String
