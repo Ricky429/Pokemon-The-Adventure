@@ -51,7 +51,8 @@ class ViewController: UIViewController {
         fireChoice.isHidden = true
         waterChoice.isHidden = true
         randPokemon.partyPokemon.append(bulbasaur.name)
-        randPokemon.pokedex.append(bulbasaur.name)
+        randPokemon.pokedex.append(bulbasaur)
+        randPokemon.capturedPokemon = bulbasaur
         
         
         
@@ -68,7 +69,7 @@ class ViewController: UIViewController {
         fireChoice.isHidden = true
         waterChoice.isHidden = true
         randPokemon.partyPokemon.append(charmander.name)
-        randPokemon.pokedex.append(charmander.name)
+        randPokemon.pokedex.append(charmander)
     }
     
     @IBAction func waterStarter(_ sender: Any) {
@@ -82,10 +83,11 @@ class ViewController: UIViewController {
         fireChoice.isHidden = true
         waterChoice.isHidden = true
         randPokemon.partyPokemon.append(squirtle.name)
-        randPokemon.pokedex.append(squirtle.name)
+        randPokemon.pokedex.append(squirtle)
     }
     
     
     
 }
+
 

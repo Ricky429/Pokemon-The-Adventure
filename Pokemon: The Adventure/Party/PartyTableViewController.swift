@@ -46,4 +46,22 @@ class PartyTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showParty") {
+            
+            let DVC = segue.destination as! PartyViewController
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                
+                let pokeTitle = randPokemon.partyPokemon[indexPath.row] as String
+                DVC.sentData1 = pokeTitle
+            }
+        }
+    }
+    
+    @IBAction func dismiss(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
 }
