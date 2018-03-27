@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet var waterChoice: UIButton!
     @IBOutlet var locationLabel: UILabel!
     @IBOutlet var moveForward: UIButton!
-    @IBOutlet var moveRight: UIButton!
-    @IBOutlet var moveLeft: UIButton!
     @IBOutlet var moveBack: UIButton!
 
     override func viewDidLoad() {
@@ -29,9 +27,6 @@ class ViewController: UIViewController {
         locationLabel.text = "Pallet Town"
         moveForward.isEnabled = false
         moveBack.isEnabled = false
-        moveLeft.isEnabled = false
-        moveRight.isEnabled = false
-        
         
     }
 
@@ -42,10 +37,8 @@ class ViewController: UIViewController {
     
     @IBAction func grassStarter(_ sender: Any) {
         let bulbasaur = Pokemon(name: "Bulbasaur", level: 5, hp: 20, atk: 10, def: 11, spAtk: 12, spDef: 12, speed: 9)
-        moveRight.isEnabled = true
         moveForward.isEnabled = true
         moveBack.isEnabled = true
-        moveLeft.isEnabled = true
         starterLabel.text = "Congratulations, you chose \(bulbasaur.name)"
         grassChoice.isHidden = true
         fireChoice.isHidden = true
@@ -53,17 +46,12 @@ class ViewController: UIViewController {
         randPokemon.partyPokemon.append(bulbasaur.name)
         randPokemon.pokedex.append(bulbasaur)
         randPokemon.capturedPokemon = bulbasaur
-        
-        
-        
     }
     
     @IBAction func fireStarter(_ sender: Any) {
         let charmander = Pokemon(name: "Charmander", level: 5, hp: 20, atk: 11, def: 10, spAtk: 10, spDef: 10, speed: 11)
-        moveRight.isEnabled = true
         moveForward.isEnabled = true
         moveBack.isEnabled = true
-        moveLeft.isEnabled = true
         starterLabel.text = "Congratulations, you chose \(charmander.name)"
         grassChoice.isHidden = true
         fireChoice.isHidden = true
@@ -74,16 +62,34 @@ class ViewController: UIViewController {
     
     @IBAction func waterStarter(_ sender: Any) {
         let squirtle = Pokemon(name: "Squirtle", level: 5, hp: 20, atk: 9, def: 12, spAtk: 11, spDef: 12, speed: 10)
-        moveRight.isEnabled = true
         moveForward.isEnabled = true
         moveBack.isEnabled = true
-        moveLeft.isEnabled = true
         starterLabel.text = "Congratulations, you chose \(squirtle.name)"
         grassChoice.isHidden = true
         fireChoice.isHidden = true
         waterChoice.isHidden = true
         randPokemon.partyPokemon.append(squirtle.name)
         randPokemon.pokedex.append(squirtle)
+    }
+    
+    @IBAction func forward(_ sender: Any) {
+        movement.location += 1
+        locationLabel.text = travel()
+        
+        
+        
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        
+        if movement.location == 0 {
+            locationLabel.text = "Pallet Town"
+            locationLabel.text = travel()
+        } else {
+            movement.location -= 1
+            locationLabel.text = travel()
+        }
+        
     }
     
     

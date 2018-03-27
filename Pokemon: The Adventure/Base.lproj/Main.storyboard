@@ -85,21 +85,17 @@
                                 <rect key="frame" x="159" y="447" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forward"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcC-0r-QTo">
-                                <rect key="frame" x="233" y="475" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Right"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlT-rA-mqZ">
-                                <rect key="frame" x="108" y="475" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <action selector="forward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cM8-bb-d3P"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIc-cs-RnJ">
                                 <rect key="frame" x="170" y="515" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAG-px-ecD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPD-eh-A7Z">
                                 <rect key="frame" x="277" y="617" width="34" height="30"/>
@@ -116,8 +112,6 @@
                         <outlet property="locationLabel" destination="ZVj-eM-byL" id="61k-1y-KpP"/>
                         <outlet property="moveBack" destination="dIc-cs-RnJ" id="myD-K8-Arr"/>
                         <outlet property="moveForward" destination="tzr-8E-ksd" id="GTZ-35-HVu"/>
-                        <outlet property="moveLeft" destination="SlT-rA-mqZ" id="gFo-3t-3fB"/>
-                        <outlet property="moveRight" destination="rcC-0r-QTo" id="sXQ-cI-NMt"/>
                         <outlet property="starterLabel" destination="Y1i-Tl-L5P" id="Czx-2b-8Sj"/>
                         <outlet property="titleLabel" destination="0jU-qx-rVj" id="eqr-Ts-QMz"/>
                         <outlet property="waterChoice" destination="LR9-Aj-KaK" id="bvU-be-upC"/>
