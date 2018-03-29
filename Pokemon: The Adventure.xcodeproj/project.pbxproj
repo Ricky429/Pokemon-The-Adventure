@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C3EC5CC206ACE6600225263 /* Mechanics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3EC5CB206ACE6600225263 /* Mechanics.swift */; };
+		2C3EC5CE206D411A00225263 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3EC5CD206D411A00225263 /* Locations.swift */; };
 		2CA859522055AD78008DA780 /* PartyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA859512055AD78008DA780 /* PartyTableViewController.swift */; };
 		2CA859542055AD8E008DA780 /* PartyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA859532055AD8E008DA780 /* PartyTableViewCell.swift */; };
 		2CA859562055ADA0008DA780 /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA859552055ADA0008DA780 /* PartyViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		2C3EC5CB206ACE6600225263 /* Mechanics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mechanics.swift; sourceTree = "<group>"; };
+		2C3EC5CD206D411A00225263 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		2CA859512055AD78008DA780 /* PartyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyTableViewController.swift; sourceTree = "<group>"; };
 		2CA859532055AD8E008DA780 /* PartyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyTableViewCell.swift; sourceTree = "<group>"; };
 		2CA859552055ADA0008DA780 /* PartyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				2CA859502055AD4C008DA780 /* Party */,
 				2CD0C3D2204C77BA00611B4F /* AppDelegate.swift */,
+				2C3EC5CD206D411A00225263 /* Locations.swift */,
 				2C3EC5CB206ACE6600225263 /* Mechanics.swift */,
 				2CD0C403204C7CFC00611B4F /* Pokemon.swift */,
 				2CD0C3D4204C77BA00611B4F /* ViewController.swift */,
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3EC5CE206D411A00225263 /* Locations.swift in Sources */,
 				2CA859562055ADA0008DA780 /* PartyViewController.swift in Sources */,
 				2CA859522055AD78008DA780 /* PartyTableViewController.swift in Sources */,
 				2CD0C3DB204C77BA00611B4F /* Pokemon__The_Adventure.xcdatamodeld in Sources */,

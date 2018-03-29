@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func forward(_ sender: Any) {
-        movement.location += 1
+        areas.location += 1
         locationLabel.text = travel()
         
         
@@ -82,11 +82,11 @@ class ViewController: UIViewController {
     
     @IBAction func back(_ sender: Any) {
         
-        if movement.location == 0 {
+        if areas.location == 0 {
             locationLabel.text = "Pallet Town"
             locationLabel.text = travel()
         } else {
-            movement.location -= 1
+            areas.location -= 1
             locationLabel.text = travel()
         }
         
