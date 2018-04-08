@@ -1,20 +1,9 @@
 # Pokemon-The-Adventure
-Text based Pokemon game
-
-
+Text-style Pokemon game
 
 Project kickoff of a text based adventure game for iOS based on the Pokemon Franchise.
 
-Additions:
-1. UI controls: Directional Movement, Save/Reset, Pokedex, Party, and Starter Selection.
-2. Starter Selection logic and UI change logic when adventure starts.
-3. Added functionality that adds Pokemon to your party.
-4. Added foundation for similar Pokedex and Box Pokemon.
+This will aim to be a comprehensive Pokemon game incorporating 7 Generations of of the franchise into one game.
 
-Upcoming Additions:
-1. Detail screen for more party Pokemon information.
-2. Addition of Pokemon captures to party.
-3. Movement logic between Routes and Towns.
-4. Wild Pokemon encounters.
-5. Pokemon battles.
-6. The addition of Pokemon Movesets.
+Gen Progress:
+Currently working on Gen 1 basics before adding in mechanics.
