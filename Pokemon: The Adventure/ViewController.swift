@@ -74,11 +74,11 @@ class ViewController: UIViewController {
     
     @IBAction func forward(_ sender: Any) {
         areas.location += 1
-        if areas.location <= 49 {
+        if areas.location <= 74 {
             locationLabel.text = travelKanto1()
-        } else if areas.location <= 104 {
+        } else if areas.location <= 149 {
             locationLabel.text = travelKanto2()
-        } else if areas.location <= 204 {
+        } else if areas.location <= 249 {
             locationLabel.text = travelKanto3()
         } else {
             locationLabel.text = travelKanto4()
